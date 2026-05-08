@@ -24,7 +24,7 @@
         This policy applies to StillForm, a single-user body-progress journal built around local storage,
         weekly photos, measurements, notes, comparisons, and optional AI reads.
       </p>
-      <span class="updated">Last updated: May 12, 2026</span>
+      <span class="updated">Last updated: May 14, 2026</span>
     </header>
 
     <section class="section">
@@ -95,6 +95,29 @@
       <p>
         If you do not want any data sent for AI processing, do not tap the AI read buttons. The app remains
         usable without AI.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Apple Health And Health Connect</h2>
+      <p>
+        Apple Health (iOS) and Health Connect (Android) integration is off by default. If you turn it on in
+        Settings, StillForm reads a bounded set of your existing data &mdash; body weight, body fat percent,
+        lean body mass, waist circumference (iOS only), and workout sessions &mdash; into the local journal.
+        StillForm does not write to Apple Health or Health Connect; the integration is read-only.
+      </p>
+      <p>
+        Once a Health sample is imported it is treated identically to a row you typed in: it stays on this
+        device, never auto-syncs anywhere, and is included in the off-device AI flows only when you
+        explicitly tap "Ask AI" on a Compare or "Evaluate" on Insights. The original Apple Health and Health
+        Connect data also stays in those services under their own privacy policies.
+      </p>
+      <p>
+        You can revoke permissions at any time in iOS Settings &rarr; Privacy &amp; Security &rarr; Health
+        &rarr; StillForm, or in the Health Connect app &rarr; App permissions &rarr; StillForm. Settings
+        &rarr; Health &rarr; Disconnect inside StillForm clears its remembered authorization and deletes
+        every weight, body-composition row, and workout session that was imported from Health. Manually-
+        entered rows are kept.
       </p>
     </section>
 
