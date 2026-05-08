@@ -1,6 +1,6 @@
 # StillForm Public Pages
 
-Static public pages for StillForm / Silhouette Frame:
+Static public pages for StillForm:
 
 - `privacy-policy.html`
 - `support.html`
