@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StillForm Privacy Policy</title>
+  <meta name="description" content="Privacy policy for StillForm, a local-first body-progress journal.">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="StillForm">
+      <a class="brand" href="./">StillForm</a>
+      <div class="nav-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Private by default, useful by choice.</h1>
+      <p class="lede">
+        This policy applies to StillForm, also listed in some builds as Silhouette Frame. StillForm is a
+        single-user body-progress journal built around local storage, weekly photos, measurements, notes,
+        comparisons, and optional AI reads.
+      </p>
+      <span class="updated">Last updated: May 8, 2026</span>
+    </header>
+
+    <section class="section">
+      <h2>Short Version</h2>
+      <p>
+        StillForm does not require an account. Your progress photos, weight logs, measurements, notes,
+        goals, and saved reads are stored on your device by default. The app has no ads, no social feed,
+        and no advertising trackers.
+      </p>
+      <div class="callout">
+        <p>
+          Data leaves your device only when you take an explicit action or turn on an explicit setting:
+          asking AI for a read, enabling crash reports, enabling detection diagnostics, using purchases,
+          exporting or sharing data, importing selected photos, or contacting support.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Data Stored On Your Device</h2>
+      <p>The following data stays in the app's private storage on your iPhone or Android device by default:</p>
+      <ul>
+        <li>Progress photos, calibration photos, goal photos, and imported photos.</li>
+        <li>Weight logs, measurements, notes, goals, reminders, and app preferences.</li>
+        <li>AI reads saved in the local journal after you ask for them.</li>
+        <li>Pose and body-analysis data generated on-device to help with alignment, comparisons, and body-scan views.</li>
+      </ul>
+      <p>
+        Derived body masks and cutouts are generated on-device where supported, cached locally, and treated
+        as derived photo data. They are used for app visuals and, when available, may be used to reduce the
+        surrounding environment shown in an AI photo request that you explicitly start.
+      </p>
+      <p>
+        Uninstalling the app removes its local data from the device. StillForm does not provide cloud backup
+        or account sync in the current app.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Optional AI Reads</h2>
+      <p>
+        AI reads are opt-in per action. StillForm does not upload photos or journal data just because the app
+        is open.
+      </p>
+      <h3>Compare AI</h3>
+      <p>
+        When you ask AI to evaluate a photo comparison, StillForm may send the compared photos, pose labels,
+        dates, comparison context, recent app history, relevant notes, prior saved reads, and an anonymous
+        per-install identifier for rate limiting. Face cropping is enabled by default before photo upload.
+        When a body cutout is available, the request may use the cutout instead of the original photo to
+        reduce room and background detail.
+      </p>
+      <h3>Insights AI</h3>
+      <p>
+        When you ask AI to evaluate Insights, StillForm sends a bounded snapshot of logged numbers and dates,
+        such as recent weigh-ins, measurements, shoot dates, pose counts, focus phase, goals, notes, and prior
+        saved reads. This path does not send photos.
+      </p>
+      <h3>AI Processing Providers</h3>
+      <p>
+        AI requests are sent over HTTPS through a Cloudflare Worker operated for StillForm and forwarded to
+        Anthropic for model processing. AI inputs and outputs are not used by Anthropic to train models under
+        Anthropic's API data-use terms. Standard provider logs may be retained for security, abuse prevention,
+        debugging, or billing according to each provider's policies.
+      </p>
+      <p>
+        If you do not want any data sent for AI processing, do not tap the AI read buttons. The app remains
+        usable without AI.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Crash Reports</h2>
+      <p>
+        Crash reports are off by default. If you turn them on in Settings, StillForm may send anonymized crash
+        diagnostics to GlitchTip so crashes can be fixed. Crash reports can include stack traces, app version,
+        device model, and operating system version. They are scrubbed to avoid photo paths, body data, names,
+        email addresses, request headers, and user-entered content.
+      </p>
+      <p>You can turn crash reports off at any time in Settings.</p>
+    </section>
+
+    <section class="section">
+      <h2>Detection Diagnostics</h2>
+      <p>
+        Detection diagnostics are off by default. If you turn on "Help improve detection" in Settings,
+        StillForm may share numeric capture diagnostics used to improve body-presence and pose reliability.
+        These diagnostics can include detector scores, pose labels, camera-facing mode, quality scores,
+        gate results, platform, app version, and a random per-install identifier.
+      </p>
+      <p>
+        Detection diagnostics do not include progress photos, face pixels, raw body keypoints, photo file
+        paths, or raw shoot identifiers. You can turn this off and request deletion of shared detection rows
+        from Settings.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Purchases And Subscriptions</h2>
+      <p>
+        StillForm may use Apple or Google in-app purchase systems and RevenueCat to show plans, process
+        purchases, restore purchases, manage subscription status, and unlock paid features when available.
+        Purchase systems and RevenueCat may receive store transaction metadata, product identifiers,
+        entitlement status, platform, app version, and an anonymous purchase identifier.
+      </p>
+      <p>
+        StillForm does not send RevenueCat your photos, notes, measurements, AI reads, email, name,
+        advertising ID, or custom subscriber attributes.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Photo Library, Export, And Sharing</h2>
+      <p>
+        Importing past photos uses the system photo picker. StillForm reads only the photos you select and
+        copies them into the app's private storage.
+      </p>
+      <p>
+        Exporting, saving, or sharing data is user initiated. When you export or share, the selected data
+        leaves the app through the system share sheet or the destination you choose.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Support Emails</h2>
+      <p>
+        If you email support, the contents of your email and your email address are received by the support
+        mailbox so the request can be answered. Do not send progress photos unless support asks and you choose
+        to share them.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Children's Privacy</h2>
+      <p>
+        StillForm is not directed to children under 13, or the equivalent minimum age in your jurisdiction.
+        We do not knowingly collect personal data from children.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Your Choices</h2>
+      <ul>
+        <li>Do not tap AI read buttons if you do not want AI processing.</li>
+        <li>Turn crash reports off in Settings.</li>
+        <li>Turn detection diagnostics off in Settings.</li>
+        <li>Use the detection-data deletion control in Settings when available.</li>
+        <li>Delete individual items, recently deleted items, or all app data from Settings.</li>
+        <li>Uninstall the app to remove its local sandbox data from the device.</li>
+        <li>Manage or restore purchases through the app, the App Store, Google Play, or RevenueCat Customer Center when available.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Security</h2>
+      <p>
+        Local app data is protected by the operating system's app sandbox and device security model. Data
+        sent to service providers is sent over HTTPS.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Third-Party Services</h2>
+      <ul>
+        <li>Cloudflare Workers for AI request proxying and opt-in detection diagnostics.</li>
+        <li>Anthropic for optional AI processing.</li>
+        <li>GlitchTip for opt-in crash reports.</li>
+        <li>RevenueCat, Apple, and Google for purchases and subscription status when purchase features are available.</li>
+      </ul>
+      <p>
+        StillForm does not use advertising networks, social-login providers, or tracking pixels.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the "Last updated" date will be revised. Material changes will also be
+        reflected in future app releases when appropriate.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be sent to <a href="mailto:eetttble@gmail.com">eetttble@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 StillForm.</p>
+    </footer>
+  </main>
+</body>
+</html>
