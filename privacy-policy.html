@@ -21,11 +21,10 @@
       <p class="eyebrow">Privacy Policy</p>
       <h1>Private by default, useful by choice.</h1>
       <p class="lede">
-        This policy applies to StillForm, also listed in some builds as Silhouette Frame. StillForm is a
-        single-user body-progress journal built around local storage, weekly photos, measurements, notes,
-        comparisons, and optional AI reads.
+        This policy applies to StillForm, a single-user body-progress journal built around local storage,
+        weekly photos, measurements, notes, comparisons, and optional AI reads.
       </p>
-      <span class="updated">Last updated: May 8, 2026</span>
+      <span class="updated">Last updated: May 12, 2026</span>
     </header>
 
     <section class="section">
@@ -88,7 +87,9 @@
       <p>
         AI requests are sent over HTTPS through a Cloudflare Worker operated for StillForm and forwarded to
         Anthropic for model processing. AI inputs and outputs are not used by Anthropic to train models under
-        Anthropic's API data-use terms. Standard provider logs may be retained for security, abuse prevention,
+        Anthropic's API data-use terms; per Anthropic's published policy, API inputs and outputs may be
+        retained for up to 30 days for abuse review and are then deleted. Cloudflare and other providers may
+        retain standard request metadata (timestamp, IP, response status) for security, abuse prevention,
         debugging, or billing according to each provider's policies.
       </p>
       <p>
@@ -167,6 +168,62 @@
     </section>
 
     <section class="section">
+      <h2>Your Privacy Rights</h2>
+      <p>
+        This section describes the rights residents of California, the EU/UK, Canada, and other
+        jurisdictions with similar laws have over their data processed by StillForm. Most of these
+        rights apply by default to all StillForm users because the app is built around explicit,
+        per-action consent and on-device storage.
+      </p>
+      <p>
+        <strong>Lawful basis (GDPR Article 6).</strong> StillForm processes personal data under your
+        consent. Consent is given per action: tapping "Ask AI", tapping "Evaluate", turning on
+        crash reports, turning on detection diagnostics, or completing a subscription purchase.
+        You can withdraw consent at any time by turning off the relevant Settings toggle, not
+        tapping the relevant button, deleting your data through Settings, or uninstalling the app.
+        Withdrawal stops new processing immediately; data already transmitted to a third-party
+        processor is governed by that processor's retention policy described in the sections above.
+      </p>
+      <p><strong>Your rights.</strong> At any time you may:</p>
+      <ul>
+        <li><strong>Access</strong> the data StillForm holds about you — local weigh-ins,
+        measurements, notes, and saved AI reads are visible in the app itself. Crash diagnostics,
+        detection diagnostics, and subscription status held by third-party processors can be
+        requested by emailing the support address below.</li>
+        <li><strong>Delete</strong> all local data via Settings → "delete everything". Use Settings
+        → "Delete Shared Detection Data" to remove research diagnostics from our backend. To
+        delete inputs/outputs retained by Anthropic during their 30-day abuse-review window,
+        contact Anthropic per their data-usage policy.</li>
+        <li><strong>Correct</strong> any weigh-in, measurement, note, or goal directly in the app.</li>
+        <li><strong>Port</strong> a copy of your local journal via Settings → export data through
+        the system share sheet.</li>
+        <li><strong>Withdraw consent</strong> by turning off the relevant Settings toggle or
+        uninstalling the app.</li>
+        <li><strong>Lodge a complaint</strong> with your local data protection authority — for
+        EU/UK residents, your national supervisory authority; for California residents, the
+        California Privacy Protection Agency; for Canadian residents, the Office of the Privacy
+        Commissioner of Canada or the Commission d'accès à l'information du Québec.</li>
+      </ul>
+      <p>
+        <strong>Sale or sharing of personal information.</strong> StillForm does not sell or share
+        your personal information for cross-context behavioral advertising or any other purpose.
+        There is no "Do Not Sell" mechanism to enable because there is no sale.
+      </p>
+      <p>
+        <strong>International transfers.</strong> StillForm has no servers operated by us. Data
+        that leaves your device on opt-in paths flows through Cloudflare Workers (an edge network
+        that may route through a node near you) and then to Anthropic, GlitchTip, or RevenueCat,
+        each of which operates international processing under their own published data agreements.
+        By using these opt-in features you consent to those transfers.
+      </p>
+      <p>
+        <strong>Data subject requests.</strong> Email
+        <a href="mailto:support.stillform@gmail.com">support.stillform@gmail.com</a> with "privacy
+        request" in the subject. We aim to respond within 30 days (the GDPR Article 12 default).
+      </p>
+    </section>
+
+    <section class="section">
       <h2>Your Choices</h2>
       <ul>
         <li>Do not tap AI read buttons if you do not want AI processing.</li>
@@ -211,7 +268,7 @@
     <section class="section">
       <h2>Contact</h2>
       <p>
-        Questions about this policy can be sent to <a href="mailto:eetttble@gmail.com">eetttble@gmail.com</a>.
+        Questions about this policy can be sent to <a href="mailto:support.stillform@gmail.com">support.stillform@gmail.com</a>.
       </p>
     </section>
 
