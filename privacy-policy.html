@@ -22,23 +22,23 @@
       <h1>Private by default, useful by choice.</h1>
       <p class="lede">
         This policy applies to StillForm, a single-user body-progress journal built around local storage,
-        weekly photos, measurements, notes, comparisons, and optional AI reads.
+        weekly photos, measurements, notes, and comparisons.
       </p>
-      <span class="updated">Last updated: May 9, 2026</span>
+      <span class="updated">Last updated: May 10, 2026</span>
     </header>
 
     <section class="section">
       <h2>Short Version</h2>
       <p>
         StillForm does not require an account. Your progress photos, weight logs, measurements, notes,
-        goals, and saved reads are stored on your device by default. The app has no ads, no social feed,
+        goals, and comparisons are stored on your device by default. The app has no ads, no social feed,
         and no advertising trackers.
       </p>
       <div class="callout">
         <p>
           Data leaves your device only when you take an explicit action or turn on an explicit setting:
-          asking AI for a read, enabling crash reports, enabling detection
-          diagnostics, using purchases, exporting or sharing data, importing selected photos, or contacting support.
+          enabling crash reports, enabling detection diagnostics, using purchases, exporting or sharing
+          data, importing selected photos, or contacting support.
         </p>
       </div>
     </section>
@@ -49,52 +49,15 @@
       <ul>
         <li>Progress photos, calibration photos, goal photos, and imported photos.</li>
         <li>Weight logs, measurements, notes, goals, reminders, and app preferences.</li>
-        <li>AI reads saved in the local journal after you ask for them.</li>
         <li>Pose and body-analysis data generated on-device to help with alignment, comparisons, and body-scan views.</li>
       </ul>
       <p>
         Derived body masks and cutouts are generated on-device where supported, cached locally, and treated
-        as derived photo data. They are used for app visuals and, when available, may be used to reduce the
-        surrounding environment shown in an AI photo request that you explicitly start.
+        as derived photo data. They are used for app visuals and stay on this device.
       </p>
       <p>
         Uninstalling the app removes its local data from the device. StillForm does not provide cloud backup
         or account sync in the current app.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Optional AI Reads</h2>
-      <p>
-        AI reads are opt-in per action. StillForm does not upload photos or journal data just because the app
-        is open.
-      </p>
-      <h3>Compare AI</h3>
-      <p>
-        When you ask AI to evaluate a photo comparison, StillForm may send the compared photos, pose labels,
-        dates, comparison context, recent app history, relevant notes, prior saved reads, and an anonymous
-        per-install identifier for rate limiting. Face cropping is enabled by default before photo upload.
-        When a body cutout is available, the request may use the cutout instead of the original photo to
-        reduce room and background detail.
-      </p>
-      <h3>Insights AI</h3>
-      <p>
-        When you ask AI to evaluate Insights, StillForm sends a bounded snapshot of logged numbers and dates,
-        such as recent weigh-ins, measurements, shoot dates, pose counts, focus phase, goals, notes, and prior
-        saved reads. This path does not send photos.
-      </p>
-      <h3>AI Processing Providers</h3>
-      <p>
-        AI requests are sent over HTTPS through a Cloudflare Worker operated for StillForm and forwarded to
-        Anthropic for model processing. AI inputs and outputs are not used by Anthropic to train models under
-        Anthropic's API data-use terms; per Anthropic's published policy, API inputs and outputs may be
-        retained for up to 30 days for abuse review and are then deleted. Cloudflare and other providers may
-        retain standard request metadata (timestamp, IP, response status) for security, abuse prevention,
-        debugging, or billing according to each provider's policies.
-      </p>
-      <p>
-        If you do not want any data sent for AI processing, do not tap the AI
-        read buttons. The app remains usable without AI.
       </p>
     </section>
 
@@ -108,9 +71,8 @@
       </p>
       <p>
         Once a Health sample is imported it is treated identically to a row you typed in: it stays on this
-        device, never auto-syncs anywhere, and is included in the off-device AI flows only when you explicitly
-        tap "Ask AI" on a Compare, or tap "Evaluate" on Insights. The original
-        Apple Health and Health Connect data also stays in those services under their own privacy policies.
+        device and never auto-syncs anywhere. The original Apple Health and Health Connect data also stays
+        in those services under their own privacy policies.
       </p>
       <p>
         You can revoke permissions at any time in iOS Settings &rarr; Privacy &amp; Security &rarr; Health
@@ -156,7 +118,7 @@
         entitlement status, platform, app version, and an anonymous purchase identifier.
       </p>
       <p>
-        StillForm does not send RevenueCat your photos, notes, measurements, AI reads, email, name,
+        StillForm does not send RevenueCat your photos, notes, measurements, email, name,
         advertising ID, or custom subscriber attributes.
       </p>
     </section>
@@ -200,23 +162,21 @@
       </p>
       <p>
         <strong>Lawful basis (GDPR Article 6).</strong> StillForm processes personal data under your
-        consent. Consent is given per action: tapping "Ask AI",
-        tapping "Evaluate", turning on crash reports, turning on detection diagnostics, or completing a subscription purchase.
-        You can withdraw consent at any time by turning off the relevant Settings toggle, not
-        tapping the relevant button, deleting your data through Settings, or uninstalling the app.
+        consent. Consent is given per action: turning on crash reports, turning on detection diagnostics,
+        importing from Apple Health / Health Connect, or completing a subscription purchase. You can withdraw
+        consent at any time by turning off the relevant Settings toggle, disconnecting Health, deleting your
+        data through Settings, or uninstalling the app.
         Withdrawal stops new processing immediately; data already transmitted to a third-party
         processor is governed by that processor's retention policy described in the sections above.
       </p>
       <p><strong>Your rights.</strong> At any time you may:</p>
       <ul>
         <li><strong>Access</strong> the data StillForm holds about you — local weigh-ins,
-        measurements, notes, and saved AI reads are visible in the app itself. Crash diagnostics,
+        measurements, notes, Health-imported rows, and workout sessions are visible in the app itself. Crash diagnostics,
         detection diagnostics, and subscription status held by third-party processors can be
         requested by emailing the support address below.</li>
         <li><strong>Delete</strong> all local data via Settings → "delete everything". Use Settings
-        → "Delete Shared Detection Data" to remove research diagnostics from our backend. To
-        delete inputs/outputs retained by Anthropic during their 30-day abuse-review window,
-        contact Anthropic per their data-usage policy.</li>
+        → "Delete Shared Detection Data" to remove research diagnostics from our backend.</li>
         <li><strong>Correct</strong> any weigh-in, measurement, note, or goal directly in the app.</li>
         <li><strong>Port</strong> a copy of your local journal via Settings → export data through
         the system share sheet.</li>
@@ -235,7 +195,7 @@
       <p>
         <strong>International transfers.</strong> StillForm has no servers operated by us. Data
         that leaves your device on opt-in paths flows through Cloudflare Workers (an edge network
-        that may route through a node near you) and then to Anthropic, GlitchTip, or RevenueCat,
+        that may route through a node near you), GlitchTip, or RevenueCat,
         each of which operates international processing under their own published data agreements.
         By using these opt-in features you consent to those transfers.
       </p>
@@ -249,9 +209,9 @@
     <section class="section">
       <h2>Your Choices</h2>
       <ul>
-        <li>Do not tap AI read buttons if you do not want AI processing.</li>
         <li>Turn crash reports off in Settings.</li>
         <li>Turn detection diagnostics off in Settings.</li>
+        <li>Disconnect Health in Settings to delete imported Health rows and stop new reads.</li>
         <li>Use the detection-data deletion control in Settings when available.</li>
         <li>Delete individual items, recently deleted items, or all app data from Settings.</li>
         <li>Uninstall the app to remove its local sandbox data from the device.</li>
@@ -270,8 +230,7 @@
     <section class="section">
       <h2>Third-Party Services</h2>
       <ul>
-        <li>Cloudflare Workers for AI request proxying and opt-in detection diagnostics.</li>
-        <li>Anthropic for optional AI processing.</li>
+        <li>Cloudflare Workers / D1 for opt-in detection diagnostics.</li>
         <li>GlitchTip for opt-in crash reports.</li>
         <li>RevenueCat, Apple, and Google for purchases and subscription status when purchase features are available.</li>
       </ul>
