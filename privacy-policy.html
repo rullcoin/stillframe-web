@@ -24,7 +24,7 @@
         This policy applies to StillForm, a single-user body-progress journal built around local storage,
         weekly photos, measurements, notes, comparisons, and optional AI reads.
       </p>
-      <span class="updated">Last updated: May 9, 2026</span>
+      <span class="updated">Last updated: May 11, 2026</span>
     </header>
 
     <section class="section">
@@ -91,6 +91,14 @@
         retained for up to 30 days for abuse review and are then deleted. Cloudflare and other providers may
         retain standard request metadata (timestamp, IP, response status) for security, abuse prevention,
         debugging, or billing according to each provider's policies.
+      </p>
+      <p>
+        Separately from Cloudflare's standard logs, the StillForm Cloudflare Worker briefly stores a one-way
+        SHA-256 hash of your source IP address (with a worker-side secret salt, up to 48 hours) alongside a
+        per-hour and per-day counter to enforce per-source-IP abuse-prevention rate limits. The raw IP is not
+        persisted by our worker; only the hash. The hash is not linked to your per-install identifier or any
+        account, is not used for any other purpose, is not retained beyond the 48-hour rate-limit window, and is
+        not forwarded to Anthropic.
       </p>
       <p>
         If you do not want any data sent for AI processing, do not tap the AI
